@@ -19,7 +19,7 @@ const expressInit = (server) => {
         /** CORS */
         server.use(
             cors({
-                origin: ['http://localhost:3000','https://node-special-engine.herokuapp.com/],
+                origin: ['http://localhost:3000','https://scribbel.vercel.app'],
                 methods: ['GET', 'POST'],
             }),
         );
