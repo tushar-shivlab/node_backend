@@ -31,9 +31,9 @@ function createserver(socketServer) {
 
                     const user = await userModel.findById(userId);
 
-                    // console.log('user :>> ', user);
                     const groupId = group.id;
-                    // console.log('true :>> ', change);
+                    console.log('groupId :>> ', groupId);
+                    console.log('user :>> ', user);
 
                     socket.broadcast.emit(groupId, user);
                 }
